@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Outfit Bold";
+    src: url("../fonts/outfit/Outfit-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Outfit Light";
+    src: url("../fonts/outfit/Outfit-Light.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Poppins Bold";
+    src: url("../fonts/poppins/Poppins-Bold.woff2") format("woff2");
+}
+
+div.ecograder__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 20px;
+    padding: 0.75rem 1rem 0.5rem 1rem;
+    margin: 1rem auto;
+    width: 220px;
+    height: auto;
+}
+div.ecograder__inner-top {
+    padding: 0rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+div.ecograder__inner-top p {
+    color: #FFF;
+    font-family: "Outfit Light", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+}
+div.ecograder__inner-top .ecograder__arrow {
+    position: absolute;
+    left: 85px;
+    top: -13px;
+    z-index: 1;
+}
+div.ecograder__inner-top .ecograder_websitecarbon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    z-index: 2;
+}
+div.ecograder__inner-top .ecograder_websitecarbon a {
+    display: inline-block;
+    margin-right: 5px !important;
+    font-family: "Outfit Light", sans-serif !important;
+    color: #FFF;
+    font-size: 8px !important;
+    font-weight: 300 !important;
+    text-decoration: underline !important;
+    line-height: normal !important;
+}
+div.ecograder__inner-top .ecograder_websitecarbon p {
+    font-family: "Poppins Bold", sans-serif !important;
+    font-size: 31px !important;
+    line-height: 23px !important;
+    font-weight: 700 !important;
+    color: #FFF;
+}
+div.ecograder__divider {
+    margin: 0.15rem 0;
+    display: flex;
+    flex-direction: column;
+}
+div.ecograder__divider svg {
+    height: 100%;
+    width: 100%;
+}
+div.ecograder__inner-detail p {
+    color: #FFF;
+    font-family: "Outfit Light", sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 300 !important;
+    line-height: normal !important;
+}
+div.ecograder__inner-detail p .ecograder__inner-detail__bold {
+    font-family: "Outfit Bold", sans-serif !important;
+    font-weight: 700 !important;
+}
+div.ecograder__inner-detail p .ecograder__inner-detail__svg {
+    display: inline-block;
+    vertical-align: -3px !important;
+    margin-left: 3px !important;
+}
+
+/* Light/Dark Mode */
+div.ecograder__container.ecograder__light {
+    background-color: #FFFFFF;
+}
+div.ecograder__container.ecograder-border__light {
+    border: 2px solid rgba(255, 255, 255, 0.20);
+}
+div.ecograder__container.ecograder__light a,
+div.ecograder__container.ecograder__light p,
+div.ecograder__container.ecograder__light span {
+    color: #000 !important;
+}
+div.ecograder__container.ecograder__light .ecograder__arrow svg path {
+    fill: #000 !important;
+}
+div.ecograder__container.ecograder__light .ecograder__divider svg path.path-white {
+    stroke: #000 !important;
+}
+
+div.ecograder__container.ecograder__dark {
+    background-color: #000000;
+}
+div.ecograder__container.ecograder-border__dark {
+    border: 2px solid rgba(0, 0, 0, 0.20);a
+}
+
+/* Copyright */
+div.m2c-copyright__container {
+    margin: 0 0.25rem;
+    display: inline-block;
+}
+div.m2c-copyright__container p {
+    font-family: "Outfit Light", sans-serif !important;
+    color: #FFF;
+    font-size: 13px !important;
+    font-weight: 300 !important;
+}
+div.m2c-copyright__container p .m2c-copyright__svg-container {
+    position: relative;
+}
+div.m2c-copyright__container p .m2c-copyright__svg {
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+div.m2c-copyright__container p a {
+    color: #F08017 !important;
+    text-decoration: underline !important;
+}
+
+div.m2c-copyright__container.m2c-copyright__dark p {
+    color: #000 !important;
+}
+div.m2c-copyright__container.m2c-copyright__dark .m2c-copyright__svg path {
+    fill: #000 !important;
+}
