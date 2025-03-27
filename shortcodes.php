@@ -13,8 +13,8 @@ function m2c_labels($atts) {
         'm2c-labels'
     );
 
-    $theme_class = ($atts['theme'] === 'dark') ? 'ecograder__dark' : 'ecograder__light';
-    $border_class = ($atts['border'] === 'dark') ? 'ecograder-border__dark' : 'ecograder-border__light';
+    $theme_class = ($atts['theme'] === 'dark') ? 'ecograder__dark ' : 'ecograder__light ';
+    $border_class = ($atts['border'] === 'dark') ? 'ecograder-border__dark ' : 'ecograder-border__light ';
     $lines = array_map('trim', explode(',', $atts['lines']));
     $custom_style = '';
     if (preg_match('/^#(?:[0-9a-fA-F]{3}){1,2}$/', $atts['theme'])) {
