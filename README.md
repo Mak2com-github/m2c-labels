@@ -16,7 +16,7 @@ Utilisation du CSS :
 
 ## Exemple d'utilisation avec le shortcode pour l'eco label
 ```
-<?= do_shortcode('[m2c-labels theme="#171B2D" lines="1,3" note="A" url="https://www.websitecarbon.com/website/my-website" border="light"]') ?>
+<?= do_shortcode('[m2c-labels theme="#171B2D" lines="1,3" note="A" url="https://www.websitecarbon.com/website/my-website" percent="87" border="light"]') ?>
 ```
 
 ## Exemple d'utilisation avec le shortcode pour le copyright
