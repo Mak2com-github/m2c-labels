@@ -144,6 +144,13 @@ div.m2c-copyright__container p a {
     text-transform: none !important;
 }
 
+div.m2c-copyright__container.m2c-copyright__light p {
+    color: #FFF !important;
+}
+div.m2c-copyright__container.m2c-copyright__light a {
+    color: #FFF !important;
+}
+
 div.m2c-copyright__container.m2c-copyright__dark p {
     color: #000 !important;
 }
