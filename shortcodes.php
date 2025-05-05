@@ -25,80 +25,86 @@ function m2c_labels($atts) {
     ?>
     <div class="ecograder__container <?php echo esc_attr($theme_class); echo esc_attr($border_class); ?>" <?php echo $custom_style; ?>>
         <?php if (in_array('1', $lines)) : ?>
-        <div class="ecograder__inner-top ecograder__line">
-            <p>Un site noté</p>
-            <div class="ecograder__arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="44" viewBox="0 0 50 44" fill="none">
-                    <path d="M4.81549 28.2989C4.69393 28.1528 4.66567 27.9422 4.76057 27.7635C4.81777 27.6557 10.6217 16.9452 21.7824 13.635C28.7028 11.5817 36.1936 12.7448 44.0463 17.09C44.2781 17.2179 44.3637 17.5126 44.2351 17.7457C44.1057 17.9788 43.8125 18.0632 43.5794 17.9345C35.9608 13.7191 28.7195 12.5844 22.0563 14.5607C11.2792 17.7571 5.66797 28.1128 5.61282 28.217C5.48771 28.4522 5.19545 28.5415 4.96025 28.4164C4.90307 28.3862 4.85467 28.3461 4.81549 28.2989Z" fill="white"/>
-                    <path d="M35.2248 18.2837C35.1563 18.2013 35.115 18.0957 35.1136 17.9801C35.1111 17.7137 35.3251 17.4955 35.5912 17.4926L43.4085 17.4121L40.7319 10.8863C40.6309 10.6396 40.749 10.3582 40.9954 10.2568C41.2418 10.1561 41.523 10.2724 41.6249 10.5203L44.5716 17.7051C44.632 17.8532 44.6158 18.0217 44.5271 18.155C44.4388 18.2881 44.2895 18.3689 44.1301 18.3704L35.6012 18.4577C35.4502 18.4596 35.3146 18.3916 35.2248 18.2837Z" fill="white"/>
-                </svg>
+            <div class="ecograder__inner-top ecograder__line">
+                <p>Un site noté</p>
+                <div class="ecograder__arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="44" viewBox="0 0 50 44" fill="none">
+                        <path d="M4.81549 28.2989C4.69393 28.1528 4.66567 27.9422 4.76057 27.7635C4.81777 27.6557 10.6217 16.9452 21.7824 13.635C28.7028 11.5817 36.1936 12.7448 44.0463 17.09C44.2781 17.2179 44.3637 17.5126 44.2351 17.7457C44.1057 17.9788 43.8125 18.0632 43.5794 17.9345C35.9608 13.7191 28.7195 12.5844 22.0563 14.5607C11.2792 17.7571 5.66797 28.1128 5.61282 28.217C5.48771 28.4522 5.19545 28.5415 4.96025 28.4164C4.90307 28.3862 4.85467 28.3461 4.81549 28.2989Z" fill="white"/>
+                        <path d="M35.2248 18.2837C35.1563 18.2013 35.115 18.0957 35.1136 17.9801C35.1111 17.7137 35.3251 17.4955 35.5912 17.4926L43.4085 17.4121L40.7319 10.8863C40.6309 10.6396 40.749 10.3582 40.9954 10.2568C41.2418 10.1561 41.523 10.2724 41.6249 10.5203L44.5716 17.7051C44.632 17.8532 44.6158 18.0217 44.5271 18.155C44.4388 18.2881 44.2895 18.3689 44.1301 18.3704L35.6012 18.4577C35.4502 18.4596 35.3146 18.3916 35.2248 18.2837Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="ecograder_websitecarbon">
+                    <a href="<?php echo esc_url($atts['url']); ?>" title="Lien vers le site websitecarbon" target="_blank">websitecarbon</a>
+                    <p><?php echo esc_html($atts['note']); ?></p>
+                </div>
             </div>
-            <div class="ecograder_websitecarbon">
-                <a href="<?php echo esc_url($atts['url']); ?>" title="Lien vers le site websitecarbon" target="_blank">websitecarbon</a>
-                <p><?php echo esc_html($atts['note']); ?></p>
-            </div>
-        </div>
         <?php
         endif;
         if (in_array('2', $lines)) :
-        ?>
-        <div class="ecograder__line">
-            <div class="ecograder__divider">
-                <svg width="176" height="10" viewBox="0 0 176 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="path-white" d="M0 5.00012L176 5.00014" stroke="white" stroke-width="0.5"/>
-                    <path class="path-white" d="M4 0.00012207V9.50012" stroke="white" stroke-width="0.5"/>
-                    <path d="M4 0.00012207V9.50012" stroke="#F08017" stroke-width="0.5"/>
-                    <path d="M0 5.00012H11" stroke="#F08017" stroke-width="0.5"/>
-                </svg>
+            ?>
+            <div class="ecograder__line">
+                <?php if (in_array("1", $lines)) : ?>
+                    <div class="ecograder__divider">
+                        <svg width="176" height="10" viewBox="0 0 176 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M0 5.00012L176 5.00014" stroke="white" stroke-width="0.5"/>
+                            <path class="path-white" d="M4 0.00012207V9.50012" stroke="white" stroke-width="0.5"/>
+                            <path d="M4 0.00012207V9.50012" stroke="#F08017" stroke-width="0.5"/>
+                            <path d="M0 5.00012H11" stroke="#F08017" stroke-width="0.5"/>
+                        </svg>
+                    </div>
+                <?php endif; ?>
+                <div class="ecograder__inner-detail">
+                    <p>Plus propre que <span class="ecograder__inner-detail__bold"><?php echo esc_html($atts['percent']); ?>%</span> des autres sites</p>
+                </div>
             </div>
-            <div class="ecograder__inner-detail">
-                <p>Plus propre que <span class="ecograder__inner-detail__bold"><?php echo esc_html($atts['percent']); ?>%</span> des autres sites</p>
-            </div>
-        </div>
         <?php
         endif;
         if (in_array('3', $lines)) :
-        ?>
-        <div class="ecograder__line">
-            <div class="ecograder__divider">
-                <svg width="176" height="10" viewBox="0 0 176 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="path-white" d="M0 5.00012L176 5.00014" stroke="white" stroke-width="0.5"/>
-                    <path class="path-white" d="M4 0.00012207V9.50012" stroke="white" stroke-width="0.5"/>
-                    <path d="M4 0.00012207V9.50012" stroke="#F08017" stroke-width="0.5"/>
-                    <path d="M0 5.00012H11" stroke="#F08017" stroke-width="0.5"/>
-                </svg>
+            ?>
+            <div class="ecograder__line">
+                <?php if (in_array('2', $lines)) : ?>
+                    <div class="ecograder__divider">
+                        <svg width="176" height="10" viewBox="0 0 176 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M0 5.00012L176 5.00014" stroke="white" stroke-width="0.5"/>
+                            <path class="path-white" d="M4 0.00012207V9.50012" stroke="white" stroke-width="0.5"/>
+                            <path d="M4 0.00012207V9.50012" stroke="#F08017" stroke-width="0.5"/>
+                            <path d="M0 5.00012H11" stroke="#F08017" stroke-width="0.5"/>
+                        </svg>
+                    </div>
+                <?php endif; ?>
+                <div class="ecograder__inner-detail">
+                    <p>Hébergé sur un serveur
+                        <span class="ecograder__inner-detail__bold">vert</span>
+                        <span class="ecograder__inner-detail__svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                            <path d="M1.85931 12.8309L2.00068 12.9699C4.53652 15.463 8.66405 15.463 11.1999 12.9699C13.7357 10.4767 13.7357 6.4186 11.1999 3.92543L11.0585 3.78644L1.85931 12.8309Z" fill="white"/>
+                            <path d="M1.63342 12.9277L1.77984 13.0716C4.3952 15.643 8.65147 15.643 11.2681 13.0716C13.8835 10.5003 13.8835 6.31561 11.2681 3.74302L11.1217 3.59906L1.63342 12.9277ZM8.74488 10.88L10.8099 12.9103C10.1434 13.3273 8.70954 13.2193 7.12795 12.4685L8.74362 10.88H8.74488ZM6.74297 12.2737C6.0033 11.879 5.24469 11.3454 4.52521 10.6604L6.52334 8.69586L8.45204 10.5921L6.74171 12.2737H6.74297ZM11.1015 12.6211L9.03772 10.5921L10.6345 9.02224C10.8175 9.40571 10.9702 9.79415 11.0863 10.1826C11.3968 11.2201 11.3968 12.1384 11.1015 12.6199V12.6211ZM8.74488 10.3042L6.81618 8.40795L8.8143 6.44344C9.46562 7.10862 10.0185 7.85694 10.4401 8.63877L8.74614 10.3042H8.74488ZM4.23237 10.9483C4.93418 11.6159 5.69026 12.157 6.44256 12.569L4.6628 14.3188C3.77671 14.0508 2.93858 13.5879 2.22036 12.9264L4.23237 10.9483ZM5.12352 14.4405L6.82628 12.7663C8.01278 13.3484 9.16268 13.609 10.0387 13.542C8.57574 14.5112 6.78841 14.8103 5.12352 14.4405ZM11.7276 11.889C11.7919 11.0265 11.5243 9.88722 10.9412 8.72068L12.6578 7.03291C13.0365 8.67848 12.726 10.4457 11.7276 11.889ZM12.5341 6.57995L10.7417 8.34217C10.3239 7.59137 9.77739 6.8418 9.10714 6.15677L11.1192 4.17861C11.7919 4.8835 12.2627 5.70752 12.5354 6.57995H12.5341Z" fill="black"/>
+                            <path d="M2.39074 12.2178C0.484759 10.2123 0.523888 7.05646 2.51318 5.10188C3.87387 3.76408 5.85685 3.28878 7.66059 3.80752L4.96066 5.42082L5.47565 6.25353L9.56152 3.81248L6.8212 0.00012207L6.01084 0.563537L7.60884 2.78741C5.55265 2.31583 3.35004 2.90159 1.81264 4.41313C-0.5629 6.74745 -0.603292 10.5213 1.6902 12.9078L2.392 12.2178H2.39074Z" fill="#F08017"/>
+                            <path d="M1.7785 12.9996C1.78986 13.0107 1.79996 13.0232 1.81258 13.0343L1.7785 12.9996Z" fill="#F08017"/>
+                        </svg>
+                    </span>
+                    </p>
+                </div>
             </div>
-            <div class="ecograder__inner-detail">
-                <p>Hébergé sur un serveur
-                    <span class="ecograder__inner-detail__bold">vert</span>
-                    <span class="ecograder__inner-detail__svg">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
-                        <path d="M1.85931 12.8309L2.00068 12.9699C4.53652 15.463 8.66405 15.463 11.1999 12.9699C13.7357 10.4767 13.7357 6.4186 11.1999 3.92543L11.0585 3.78644L1.85931 12.8309Z" fill="white"/>
-                        <path d="M1.63342 12.9277L1.77984 13.0716C4.3952 15.643 8.65147 15.643 11.2681 13.0716C13.8835 10.5003 13.8835 6.31561 11.2681 3.74302L11.1217 3.59906L1.63342 12.9277ZM8.74488 10.88L10.8099 12.9103C10.1434 13.3273 8.70954 13.2193 7.12795 12.4685L8.74362 10.88H8.74488ZM6.74297 12.2737C6.0033 11.879 5.24469 11.3454 4.52521 10.6604L6.52334 8.69586L8.45204 10.5921L6.74171 12.2737H6.74297ZM11.1015 12.6211L9.03772 10.5921L10.6345 9.02224C10.8175 9.40571 10.9702 9.79415 11.0863 10.1826C11.3968 11.2201 11.3968 12.1384 11.1015 12.6199V12.6211ZM8.74488 10.3042L6.81618 8.40795L8.8143 6.44344C9.46562 7.10862 10.0185 7.85694 10.4401 8.63877L8.74614 10.3042H8.74488ZM4.23237 10.9483C4.93418 11.6159 5.69026 12.157 6.44256 12.569L4.6628 14.3188C3.77671 14.0508 2.93858 13.5879 2.22036 12.9264L4.23237 10.9483ZM5.12352 14.4405L6.82628 12.7663C8.01278 13.3484 9.16268 13.609 10.0387 13.542C8.57574 14.5112 6.78841 14.8103 5.12352 14.4405ZM11.7276 11.889C11.7919 11.0265 11.5243 9.88722 10.9412 8.72068L12.6578 7.03291C13.0365 8.67848 12.726 10.4457 11.7276 11.889ZM12.5341 6.57995L10.7417 8.34217C10.3239 7.59137 9.77739 6.8418 9.10714 6.15677L11.1192 4.17861C11.7919 4.8835 12.2627 5.70752 12.5354 6.57995H12.5341Z" fill="black"/>
-                        <path d="M2.39074 12.2178C0.484759 10.2123 0.523888 7.05646 2.51318 5.10188C3.87387 3.76408 5.85685 3.28878 7.66059 3.80752L4.96066 5.42082L5.47565 6.25353L9.56152 3.81248L6.8212 0.00012207L6.01084 0.563537L7.60884 2.78741C5.55265 2.31583 3.35004 2.90159 1.81264 4.41313C-0.5629 6.74745 -0.603292 10.5213 1.6902 12.9078L2.392 12.2178H2.39074Z" fill="#F08017"/>
-                        <path d="M1.7785 12.9996C1.78986 13.0107 1.79996 13.0232 1.81258 13.0343L1.7785 12.9996Z" fill="#F08017"/>
-                    </svg>
-                </span>
-                </p>
-            </div>
-        </div>
         <?php
         endif;
         if (in_array('4', $lines)) :
-        ?>
-        <div class="ecograder__line">
-            <div class="ecograder__divider">
-                <svg width="176" height="10" viewBox="0 0 176 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="path-white" d="M0 5.00012L176 5.00014" stroke="white" stroke-width="0.5"/>
-                    <path class="path-white" d="M4 0.00012207V9.50012" stroke="white" stroke-width="0.5"/>
-                    <path d="M4 0.00012207V9.50012" stroke="#F08017" stroke-width="0.5"/>
-                    <path d="M0 5.00012H11" stroke="#F08017" stroke-width="0.5"/>
-                </svg>
+            ?>
+            <div class="ecograder__line">
+                <?php if (in_array("3", $lines)) : ?>
+                    <div class="ecograder__divider">
+                        <svg width="176" height="10" viewBox="0 0 176 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="path-white" d="M0 5.00012L176 5.00014" stroke="white" stroke-width="0.5"/>
+                            <path class="path-white" d="M4 0.00012207V9.50012" stroke="white" stroke-width="0.5"/>
+                            <path d="M4 0.00012207V9.50012" stroke="#F08017" stroke-width="0.5"/>
+                            <path d="M0 5.00012H11" stroke="#F08017" stroke-width="0.5"/>
+                        </svg>
+                    </div>
+                <?php endif; ?>
+                <div class="ecograder__inner-detail">
+                    <p>Respecteux du <span class="ecograder__inner-detail__bold">RGAA</span> (accessibilité)</p>
+                </div>
             </div>
-            <div class="ecograder__inner-detail">
-                <p>Respecteux du <span class="ecograder__inner-detail__bold">RGAA</span> (accessibilité)</p>
-            </div>
-        </div>
         <?php endif; ?>
     </div>
     <?php
